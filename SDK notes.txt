@@ -1,0 +1,8 @@
+1.分页读取联系人，优化联系人载入速度  ---------------
+2.SelectPictureView  ExpandableListView嵌套GridView  -----------y
+3.中英文混合排序  和 排序速度优化    --------------
+4.Share界面优化     -----------
+5.History界面  联系人 打开方式     -----------y
+6.SelectMusicView 按专辑分类 和 按歌手分类    -----------  
+7.receive  send方finish 之后会跳出receive loading  ----------y
+8.receive 和 send finish/continue  dialog

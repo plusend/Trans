@@ -1,0 +1,56 @@
+<!-- ReceiverFragment -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_receivers"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="50dp"
+    android:background="#FFE6ECEF" >
+
+    <ListView
+        android:id="@+id/list_receiver"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:cacheColorHint="#00000000"
+        android:divider="#FFE6ECEF"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/receive_picker_select"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/receiver_picker_tip"
+        android:textSize="14sp"
+        android:visibility="gone" />
+    <!-- searching view begin -->
+
+    <FrameLayout
+        android:id="@+id/searching_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/searching_progress"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/search_wait_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:text="@string/search_wait"
+            android:textColor="#FF000000"
+            android:textSize="16sp" />
+    </FrameLayout>
+    <!-- searching view end -->
+
+</FrameLayout>

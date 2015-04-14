@@ -1,0 +1,108 @@
+<!-- ReceiveActivity -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recieve"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE6ECEF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/common_background" >
+
+        <Button
+            android:id="@+id/receive_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/receive_title"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- waiting view begin -->
+
+    <FrameLayout
+        android:id="@+id/waiting_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/receive_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dip"
+            android:singleLine="true"
+            android:textColor="#A4A4A4"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/photo_progress"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/receive_wait_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:text="@string/receive_wait"
+            android:textColor="#FF000000"
+            android:textSize="16sp" />
+    </FrameLayout>
+    <!-- waiting view end -->
+
+
+    <!-- progress begin -->
+
+    <FrameLayout
+        android:id="@+id/records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <fragment
+            android:id="@+id/recordFragment"
+            android:name="com.plusend.components.records.RecordFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="51dp"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/receive_finish"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="@string/receive_finish"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <!-- progress end -->
+
+</FrameLayout>

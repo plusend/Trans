@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/appsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:gravity="center_vertical"
+            android:hint="@string/app_search_text"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:text="@string/app_search" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/apptext"
+        android:layout_width="fill_parent"
+        android:layout_height="16dp"
+        android:layout_below="@id/appsearch" />
+
+    <GridView
+        android:id="@+id/appgridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/apptext"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="20dp" >
+    </GridView>
+
+    <ProgressBar
+        android:id="@+id/select_app_view_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
